@@ -155,7 +155,7 @@ npm run typecheck
 npm run compile                 # rebuild dist/ after changing src/
 ```
 
-The compiled `dist/` is committed on purpose. It lets `npm install github:pxlkt/wgethub` work by copying files, with no build step and no install scripts to approve. CI fails if `dist/` and `src/` drift apart.
+The compiled `dist/` is committed on purpose. It lets `npm install github:pxlkt/wgethub` install straight from the repository by copying files, with no build step and no install scripts to approve. CI fails if `dist/` and `src/` drift apart.
 
 There are no runtime dependencies. The argument parser, fuzzy picker, progress display and API client are all in `src/`, about 2,300 lines of strict TypeScript. The end-to-end tests run the real CLI and the real `wget` against a local server that drops connections and serves wrong checksums on purpose.
 

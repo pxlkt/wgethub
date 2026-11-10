@@ -1,5 +1,5 @@
 {
-  "name": "wgethub",
+  "name": "wgethub-cli",
   "version": "2.0.0",
   "description": "The unreasonably robust way to wget a GitHub release: auto-picks the asset for your machine, resumes, retries and verifies SHA-256.",
   "type": "module",
