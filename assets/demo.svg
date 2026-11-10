@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 432" width="880" role="img" aria-label="wgethub downloading, searching and resuming in a terminal">
+<rect width="880" height="432" rx="10" fill="#0d1117" stroke="#30363d"/>
+<circle cx="22" cy="20" r="6" fill="#ff5f56"/><circle cx="42" cy="20" r="6" fill="#ffbd2e"/><circle cx="62" cy="20" r="6" fill="#27c93f"/>
+<text x="440.0" y="24" fill="#8b949e" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12" text-anchor="middle">wgethub</text>
+<g font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'DejaVu Sans Mono',monospace" font-size="13.5" xml:space="preserve">
+<text x="20" y="62"><tspan fill="#8b949e">$ </tspan><tspan fill="#e6edf3">wgethub cli/cli</tspan></text>
+<text x="20" y="84"><tspan fill="#56d4dd">● </tspan><tspan fill="#ffffff" font-weight="bold">cli/cli</tspan><tspan fill="#8b949e"> · </tspan><tspan fill="#ffffff" font-weight="bold">v2.103.3</tspan><tspan fill="#8b949e"> · 14 days ago</tspan></text>
+<text x="20" y="106"><tspan fill="#8b949e">  auto-selected for linux/x64 (gnu) · use --list to see all 22 assets</tspan></text>
+<text x="20" y="128"><tspan fill="#56d4dd">  ⠹ </tspan><tspan fill="#e6edf3">gh_2.103.3_linux_amd64.tar.gz  </tspan><tspan fill="#56d4dd">━━━━━━━━━━━━</tspan><tspan fill="#484f58">───────</tspan><tspan fill="#e6edf3">   61%  8.7 MiB/14.3 MiB  6.2 MiB/s  eta 1s</tspan></text>
+<text x="20" y="150"><tspan fill="#3fb950">✔ </tspan><tspan fill="#e6edf3">gh_2.103.3_linux_amd64.tar.gz  </tspan><tspan fill="#8b949e">14.3 MiB · 2s · </tspan><tspan fill="#3fb950">sha256 via GitHub digest</tspan></text>
+<text x="20" y="194"><tspan fill="#8b949e">$ </tspan><tspan fill="#e6edf3">wgethub ripgrep</tspan></text>
+<text x="20" y="216"><tspan fill="#56d4dd">? </tspan><tspan fill="#ffffff" font-weight="bold">Repository</tspan><tspan fill="#8b949e"> ❯ </tspan><tspan fill="#e6edf3">rip</tspan><tspan fill="#8b949e">_  3/8</tspan></text>
+<text x="20" y="238"><tspan fill="#56d4dd">❯ </tspan><tspan fill="#ffffff" font-weight="bold">BurntSushi/ripgrep</tspan><tspan fill="#8b949e">  ★ 69,952  ripgrep recursively searches directories for a regex pattern</tspan></text>
+<text x="20" y="260"><tspan fill="#e6edf3">  phiresky/ripgrep-all</tspan><tspan fill="#8b949e">  ★ 9,925  rga: ripgrep, but also search in PDFs, E-Books, Office documents</tspan></text>
+<text x="20" y="282"><tspan fill="#e6edf3">  jremmen/vim-ripgrep</tspan><tspan fill="#8b949e">  ★ 565  Use RipGrep in Vim and display results in a quickfix list</tspan></text>
+<text x="20" y="304"><tspan fill="#8b949e">  ↑↓ move · type to filter · enter to confirm · esc to cancel</tspan></text>
+<text x="20" y="348"><tspan fill="#8b949e">$ </tspan><tspan fill="#e6edf3">wgethub sharkdp/bat   </tspan><tspan fill="#8b949e"># wifi died halfway through the last run</tspan></text>
+<text x="20" y="370"><tspan fill="#56d4dd">● </tspan><tspan fill="#ffffff" font-weight="bold">sharkdp/bat</tspan><tspan fill="#8b949e"> · </tspan><tspan fill="#ffffff" font-weight="bold">v0.26.1</tspan><tspan fill="#8b949e"> · 11 months ago</tspan></text>
+<text x="20" y="392"><tspan fill="#3fb950">✔ </tspan><tspan fill="#e6edf3">bat-v0.26.1-x86_64-unknown-linux-musl.tar.gz  </tspan><tspan fill="#8b949e">3.4 MiB · resumed · </tspan><tspan fill="#3fb950">sha256 via GitHub digest</tspan></text>
+</g>
+</svg>

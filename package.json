@@ -1,9 +1,32 @@
 {
-  "name": "wgethub",
-  "version": "1.0.0",
-  "main": "index.ts",
-  "dependencies": {
-    "command-line-args": "^6.0.2",
-    "prompts": "^2.4.2"
+  "name": "wgethub-cli",
+  "version": "2.0.0",
+  "description": "The unreasonably robust way to wget a GitHub release: auto-picks the asset for your machine, resumes, retries and verifies SHA-256.",
+  "type": "module",
+  "license": "MIT",
+  "author": "pxlkt",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pxlkt/wgethub.git"
+  },
+  "homepage": "https://github.com/pxlkt/wgethub#readme",
+  "bugs": "https://github.com/pxlkt/wgethub/issues",
+  "keywords": ["wget", "github", "releases", "download", "cli", "checksum", "typescript"],
+  "bin": {
+    "wgethub": "dist/cli.js"
+  },
+  "files": ["dist"],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "compile": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test \"test/**/*.test.ts\"",
+    "dev": "node src/cli.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^7.0.2"
   }
 }

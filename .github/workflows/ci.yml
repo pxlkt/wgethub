@@ -1,0 +1,50 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    name: test (node ${{ matrix.node }}, ${{ matrix.os }})
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+        node: [22, 24]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node }}
+      - name: Install wget (macOS)
+        if: runner.os == 'macOS'
+        run: command -v wget || brew install wget
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm test
+      - name: Committed dist/ matches the source
+        run: |
+          npm run compile
+          git diff --exit-code -- dist
+      - name: Smoke-test the built CLI
+        run: |
+          node dist/cli.js --version
+          node dist/cli.js --doctor --no-auth
+
+  node20:
+    name: built output runs on node 20
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm ci
+      - run: node dist/cli.js --version
+      - run: node dist/cli.js --help
