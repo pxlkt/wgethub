@@ -28,6 +28,10 @@ jobs:
       - run: npm ci
       - run: npm run typecheck
       - run: npm test
+      - name: Committed dist/ matches the source
+        run: |
+          npm run compile
+          git diff --exit-code -- dist
       - name: Smoke-test the built CLI
         run: |
           node dist/cli.js --version

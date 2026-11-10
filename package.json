@@ -20,11 +20,10 @@
     "node": ">=20"
   },
   "scripts": {
-    "build": "tsc -p tsconfig.build.json",
+    "compile": "tsc -p tsconfig.build.json",
     "typecheck": "tsc --noEmit",
     "test": "node --test \"test/**/*.test.ts\"",
-    "dev": "node src/cli.ts",
-    "prepare": "npm run build"
+    "dev": "node src/cli.ts"
   },
   "devDependencies": {
     "@types/node": "^24.0.0",
